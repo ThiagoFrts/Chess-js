@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #fedca860;
+  background-color: #ebc28460;
 }
 
 .topo {
@@ -24,25 +24,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
-  
 }
 
 .quadro {
+  border: solid 1px;
   background-color: #f5c05e9c;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   justify-content: center;
-  height: 20vh;
-  border: solid 1px;
-  width: 200px;
-  height: 250px;
+  height: 330px;
+  width: 220px;
   margin: 100px;
   border-radius: 20px;
   box-shadow: 0px 2px 5px;
   overflow: hidden;
+
 }
 
 .image {
@@ -55,35 +53,48 @@ button {
   color: azure;
   border: solid 0px;
   border-radius: 9px;
-  height: 30px;
+  height: 55px;
   width: 150px;
+  font-size: 17px;
+  transition: background-color 0.4s ease, transform 0.4s ease
+}
+
+button:hover {
+  background-color: #573b06;
+  cursor: pointer;
+  color: #fbdf99;
+  transition: all;
+  transform: scale(1.05);
 }
 
 .branco {
-  border: solid 1px;
   background-color: rgb(248, 227, 201);
-  width: 50px;
-  height: 50px;
-  gap: 10px
-
+  width: 60px;
+  height: 60px;
 }
 
 .preto {
-  flex-direction: column;
   background-color: rgb(143, 104, 33);
-  width: 50px;
-  height: 50px;
-  border: solid 1px;
-  gap: 10px
-
+  width: 60px;
+  height: 60px;
 }
 
 .tabuleiro {
-  align-items: center;
-  justify-content: center;
+  box-sizing: content-box;
+  height: 480px;
+  width: 480px;
   display: grid;
-  margin: 20vh;
-  gap: 0.5px;
-  grid-template-columns: repeat(8, 50px);
-  grid-template-rows: repeat(8, 50px);
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  border: solid;
+  
 }
+
+.borda {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
